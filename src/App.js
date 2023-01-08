@@ -1,16 +1,25 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
-import SingIn from './components/SingIn';
+import SignIn from './components/SingIn';
 import SignUp from './components/SignUp';
+import ButtonAppBar from './components/Navbar'
+import {BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <BrowserRouter>
+    <ButtonAppBar/>
+    <Routes>
+      <Route path='/' element={<SignIn/>}/>
+      <Route path='/SignUp' element={<SignUp/>} />
+    </Routes>
+    </BrowserRouter>
+    // <div>
       
-        <SingIn/>  
-        <SignUp/>
+    //     <SingIn/>  
+    //     <SignUp/>
     
-    </div>
+    // </div>
   );
 }
 

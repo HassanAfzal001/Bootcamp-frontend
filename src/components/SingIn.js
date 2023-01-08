@@ -3,10 +3,10 @@ import {Avatar, Grid, Paper, TextField,
 FormControlLabel,
 Checkbox,
 Button,
-Typography,
-Link} from '@mui/material' 
+Typography} from '@mui/material' 
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import { green } from '@mui/material/colors';
+import {Link} from 'react-router-dom';
+//import { green } from '@mui/material/colors';
 
 export default function SingIn() {
     const paperStyle = {
@@ -67,7 +67,7 @@ export default function SingIn() {
                 </Typography>
                 
                 <Typography style={commonStyle}>
-                    Don't have any account! <Link href='#'> SignUp</Link>
+                    Don't have any account! <Link to='/signup'> SignUp</Link>
                 </Typography>
             
             </Paper>

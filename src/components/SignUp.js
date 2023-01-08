@@ -1,12 +1,10 @@
 import React from 'react'
 import {Avatar, Grid, Paper, TextField,
-FormControlLabel,
-Checkbox,
 Button,
-Typography,
-Link} from '@mui/material' 
+Typography} from '@mui/material' 
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import { blue } from '@mui/material/colors';
+import {Link} from 'react-router-dom';
 
 export default function SingUp() {
     const paperStyle = {
@@ -99,6 +97,9 @@ export default function SingUp() {
                 style={commonStyle}
                 required/>
                 
+                <Typography style={commonStyle}>
+                    Don't have any account! <Link to='/'> SignIn</Link>
+                </Typography>
                 <Button
                 variant="contained"
                 fullWidth
