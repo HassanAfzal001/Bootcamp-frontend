@@ -8,17 +8,19 @@ import {Link} from 'react-router-dom';
 
 export default function SingUp() {
     const paperStyle = {
-        height: "85vh",
+        height: "81vh",
         width: 280,
         padding: 20,
         margin:"20px auto",
+        backgroundColor: 'lightBlue'
     };
     const avatarStyle={
+        height: 40,
         backgroundColor: 'blue',
     };
     const commonStyle={
-        marginTop: 3,
-        marginBottom:3
+        marginTop: 0,
+        marginBottom:0.5
     };
 
   return (

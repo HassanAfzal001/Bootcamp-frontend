@@ -1,7 +1,7 @@
 import React from 'react'
 import {Avatar, Grid, Paper, TextField,
 FormControlLabel,
-Checkbox,
+Checkbox, //03046277508
 Button,
 Typography} from '@mui/material' 
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
@@ -9,11 +9,15 @@ import {Link} from 'react-router-dom';
 //import { green } from '@mui/material/colors';
 
 export default function SingIn() {
+    const gridStyle = {
+        backgroundColor: "lightBlue"
+    };
     const paperStyle = {
         height: "70vh",
         width: 280,
         padding: 20,
         margin:"20px auto",
+        backgroundColor: 'lightBlue'
     };
     const avatarStyle={
         backgroundColor: 'blue',
@@ -26,7 +30,7 @@ export default function SingIn() {
   return (
     <>
     {/* <div>SingIn</div> */}
-    <Grid>
+    <Grid >
             <Paper elevation={7} style={paperStyle}>
                 <Grid align='center'>
                 <Avatar style={avatarStyle}>
